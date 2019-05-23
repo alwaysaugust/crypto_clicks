@@ -7,6 +7,7 @@ import { Tasks } from '../api/tasks.js';
 
 import Task from './Task.js';
 import AccountsUIWrapper from './AccountsUIWrapper.js';
+import {Game} from "../api/game";
 
 // App component - represents the whole app
 class App extends Component {
@@ -81,7 +82,7 @@ class App extends Component {
                 placeholder="Type to add new tasks"
               />
             </form> : ''
-          }
+          }console.log(Game.find().count());
         </header>
 
         <ul>

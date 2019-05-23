@@ -1,0 +1,65 @@
+div.room {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 50%;
+  text-align: center;
+
+  div.shadow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+  }
+
+
+  button.dot {
+    position: absolute;
+    border-radius: 25%;
+    height: 70px;
+    width: 70px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+
+    &.A {
+      background: yellow;
+    }
+
+    &.B {
+      background: yellowgreen;
+    }
+  }
+
+  div.payment {
+    height: 100%;
+
+    img {
+      display: block;
+      width: 300px;
+      height: 300px;
+      margin: auto;
+    }
+
+    button.kokun {
+      padding: 10px 20px;
+      color: white;
+      background: rgba(0, 143, 223, 1);
+      border: none;
+      border-radius: 10px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+  }
+
+  &:nth-of-type(1) {
+    background: rgba(249, 237, 214, 0.1);
+  }
+
+  &:nth-of-type(2) {
+    background: rgba(214, 249, 238, 0.1);
+  }
+}
